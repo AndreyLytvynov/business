@@ -36,13 +36,6 @@ const Contacts = () => {
     console.log(isValid);
   };
 
-  const onSubmit = () => {
-    if (!isValid) {
-      console.log("Zapolni");
-    }
-    console.log("asdasdasd");
-  };
-
   return (
     <ContactsStyled id="contact">
       <ImageWrapperStyled>
