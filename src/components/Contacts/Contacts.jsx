@@ -51,7 +51,7 @@ const Contacts = () => {
       <WrapperStyled>
         <FormStyled name="contact" method="POST" data-netlify="true">
           <SectionTitleStyled>Request Callback</SectionTitleStyled>
-
+          <input type="hidden" name="form-name" value="contact" />
           <Box as={"label"} position={"relative"}>
             <InputStyled
               name="name"
