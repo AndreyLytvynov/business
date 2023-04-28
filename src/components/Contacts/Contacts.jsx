@@ -50,11 +50,17 @@ const Contacts = () => {
         </picture>
       </ImageWrapperStyled>
       <WrapperStyled>
-        <FormStyled onSubmit={handleSubmit(onSubmit)}>
+        <FormStyled
+          onSubmit={handleSubmit(onSubmit)}
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <SectionTitleStyled>Request Callback</SectionTitleStyled>
 
           <Box as={"label"} position={"relative"}>
             <InputStyled
+              name="name"
               type="text"
               placeholder="Enter your name"
               {...register("text")}
@@ -68,6 +74,7 @@ const Contacts = () => {
           <Box as={"label"} position={"relative"}>
             <InputStyled
               type="email"
+              name="email"
               placeholder="Enter email*"
               {...register("email")}
             />
