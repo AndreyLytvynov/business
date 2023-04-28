@@ -52,7 +52,7 @@ const Header = () => {
   return (
     <>
       {currentScroll >= device && (
-        <HeaderStyled opacity={isScrolling ? 1 : 0.6}>
+        <HeaderStyled opacity={isScrolling ? 1 : 0.5}>
           <Logo />
           <NavStyled>
             <Box as="ul" display="flex">

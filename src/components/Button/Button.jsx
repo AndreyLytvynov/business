@@ -1,8 +1,12 @@
 import React from "react";
 import { ButtonStyled } from "./Button.styled";
 
-const Button = ({ children, variant }) => {
-  return <ButtonStyled variant={variant}>{children}</ButtonStyled>;
+const Button = ({ children, variant, disabled }) => {
+  return (
+    <ButtonStyled variant={variant} disabled={disabled}>
+      {children}
+    </ButtonStyled>
+  );
 };
 
 export default Button;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeaderStyled = styled.header`
   position: fixed;
   padding: 22px 24px;
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: ${(props) => props.opacity};
 
   @media screen and ${(props) => props.theme.media.tablet} {

@@ -25,16 +25,22 @@ import {
 const Contacts = () => {
   const {
     register,
-    handleSubmit,
-    formState: { errors },
-    reset,
+    trigger,
+    formState: { errors, isValid },
   } = useForm({
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data) => {
-    console.log("data", data);
-    reset();
+  const onFocusChange = async (event) => {
+    await trigger(event.target.name);
+    console.log(isValid);
+  };
+
+  const onSubmit = () => {
+    if (!isValid) {
+      console.log("Zapolni");
+    }
+    console.log("asdasdasd");
   };
 
   return (
@@ -50,12 +56,7 @@ const Contacts = () => {
         </picture>
       </ImageWrapperStyled>
       <WrapperStyled>
-        <FormStyled
-          onSubmit={handleSubmit(onSubmit)}
-          name="contact"
-          method="POST"
-          data-netlify="true"
-        >
+        <FormStyled name="contact" method="POST" data-netlify="true">
           <SectionTitleStyled>Request Callback</SectionTitleStyled>
 
           <Box as={"label"} position={"relative"}>
@@ -64,6 +65,7 @@ const Contacts = () => {
               type="text"
               placeholder="Enter your name"
               {...register("text")}
+              onBlur={onFocusChange}
             />
             <ErrorMessage>
               {errors?.text && <img src={worning} alt="worning" />}
@@ -77,6 +79,7 @@ const Contacts = () => {
               name="email"
               placeholder="Enter email*"
               {...register("email")}
+              onBlur={onFocusChange}
             />
             <ErrorMessage>
               {errors?.email && <img src={worning} alt="worning" />}
@@ -84,7 +87,7 @@ const Contacts = () => {
             </ErrorMessage>
           </Box>
 
-          <Button variant={"contact"} type="submit">
+          <Button variant={"contact"} type="submit" disabled={!isValid}>
             Send
           </Button>
         </FormStyled>
