@@ -49,6 +49,17 @@ const Header = () => {
     };
   }, []);
 
+  const scrollTo = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    const offset = element.offsetTop;
+
+    window.scrollTo({
+      top: offset,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       {currentScroll >= device && (
@@ -57,19 +68,29 @@ const Header = () => {
           <NavStyled>
             <Box as="ul" display="flex">
               <NavItemStyled>
-                <LinkStyled href="#hero">Home </LinkStyled>
+                <LinkStyled href="#" onClick={(e) => scrollTo(e, "hero")}>
+                  Home
+                </LinkStyled>
               </NavItemStyled>
               <NavItemStyled>
-                <LinkStyled href="#we-offer">About</LinkStyled>
+                <LinkStyled href="#" onClick={(e) => scrollTo(e, "we-offer")}>
+                  About
+                </LinkStyled>
               </NavItemStyled>
               <NavItemStyled>
-                <LinkStyled href="#cases">Cases</LinkStyled>
+                <LinkStyled href="#" onClick={(e) => scrollTo(e, "cases")}>
+                  Cases
+                </LinkStyled>
               </NavItemStyled>
               <NavItemStyled>
-                <LinkStyled href="#blog">Blog</LinkStyled>
+                <LinkStyled href="#" onClick={(e) => scrollTo(e, "blog")}>
+                  Blog
+                </LinkStyled>
               </NavItemStyled>
               <NavItemStyled>
-                <LinkStyled href="#contact">Contact</LinkStyled>
+                <LinkStyled href="#" onClick={(e) => scrollTo(e, "contact")}>
+                  Contact
+                </LinkStyled>
               </NavItemStyled>
             </Box>
           </NavStyled>

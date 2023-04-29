@@ -30,7 +30,7 @@ export const HeroStyled = styled.section`
     }
   }
 
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
@@ -48,7 +48,7 @@ export const HeroStyled = styled.section`
         rgba(47, 48, 58, 0.4)
       ),
       url(${bgImage2x});
-  } */
+  }
 
   @media screen and ${(props) => props.theme.media.tablet} {
     height: 1024px;
@@ -74,7 +74,7 @@ export const MainTitleStyled = styled.h1`
   }
 `;
 
-export const TextHeroStyled = styled.h1`
+export const TextHeroStyled = styled.p`
   color: ${(props) => props.theme.colors.textWhite};
   text-align: center;
   font-size: 26px;

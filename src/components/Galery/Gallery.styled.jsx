@@ -86,7 +86,7 @@ export const PrevButtonStyled = styled.button`
   }
 
   img {
-    width: 60px;
+    width: 30px;
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -125,7 +125,7 @@ export const NextButtonStyled = styled.button`
   img {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
-    width: 60px;
+    width: 30px;
   }
 `;
 
@@ -151,14 +151,14 @@ export const CloseBtnStyled = styled.button`
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: -60px;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
   background: none;
   border: none;
   border-radius: 50%;
   height: 50px;
-  width: 50px;
+  width: 20px;
   opacity: 0.5;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

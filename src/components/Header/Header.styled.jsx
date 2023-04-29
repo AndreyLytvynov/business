@@ -28,7 +28,7 @@ export const NavStyled = styled.nav`
   }
 `;
 
-export const NavItemStyled = styled.nav`
+export const NavItemStyled = styled.li`
   color: ${(props) => props.theme.colors.textWhite};
   line-height: 1.38;
   font-size: 16px;
@@ -49,9 +49,22 @@ export const NavItemStyled = styled.nav`
 
 export const LinkStyled = styled.a`
   padding: 10px 0;
+  position: relative;
+  ::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0%;
+    height: 2px;
+    background-color: ${(props) => props.theme.colors.accent};
+    transition: width 0.3s ease-in-out;
+  }
   :hover {
-    text-decoration: underline;
-    text-underline-offset: 5px;
+    width: 100%;
     cursor: pointer;
+    ::after {
+      width: 100%;
+    }
   }
 `;
