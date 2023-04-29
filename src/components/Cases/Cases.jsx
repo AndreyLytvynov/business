@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { CasesStyled, TextStyled, SectionTitleStyled } from "./Cases.styled";
 import Gallery from "../Galery/Gallery";
-import { imagesCases } from "../../helpers/images";
 
 const Cases = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("manifest.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setData(data.imagesCases);
+      });
+  }, []);
+
   return (
     <CasesStyled id="cases">
       <TextStyled>This is what we do</TextStyled>
@@ -12,7 +21,7 @@ const Cases = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!
       </TextStyled>
-      <Gallery images={imagesCases} slider={true} />
+      <Gallery images={data} slider={true} />
     </CasesStyled>
   );
 };

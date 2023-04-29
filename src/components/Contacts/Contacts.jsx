@@ -2,15 +2,12 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "../../helpers/validationForm";
-
 import Button from "../Button/Button";
 import { Box } from "../../theme/Box";
-
 import contact from "../../images/home/contact.jpg";
 import contact2x from "../../images/home/contact@2x.jpg";
 import contactWebp from "../../images/home/contact.webp";
 import contactWebp2x from "../../images/home/contact@2x.webp";
-import worning from "../../images/form/worning.svg";
 
 import {
   ContactsStyled,
@@ -60,7 +57,9 @@ const Contacts = () => {
               onBlur={onFocusChange}
             />
             <ErrorMessage>
-              {errors?.text && <img src={worning} alt="worning" />}
+              {errors?.text && (
+                <img src={"/images/form/worning.svg"} alt="worning" />
+              )}
               {errors?.text?.message}
             </ErrorMessage>
           </Box>
@@ -73,7 +72,9 @@ const Contacts = () => {
               onBlur={onFocusChange}
             />
             <ErrorMessage>
-              {errors?.email && <img src={worning} alt="worning" />}
+              {errors?.email && (
+                <img src={"/images/form/worning.svg"} alt="worning" />
+              )}
               {errors?.email?.message}
             </ErrorMessage>
           </Box>

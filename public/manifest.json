@@ -1,0 +1,89 @@
+{
+  "imagesTeam": [
+    {
+      "src": "/images/team/person1.jpg",
+      "src2x": "/images/team/person1@2x.jpg",
+      "webp": "/images/team/person1.webp",
+      "webp2x": "/images/team/person1@2x.webp",
+      "alt": "John Doe",
+      "name": "John Doe",
+      "text": "President"
+    },
+    {
+      "src": "/images/team/person2.jpg",
+      "src2x": "/images/team/person2@2x.jpg",
+      "webp": "/images/team/person2.webp",
+      "webp2x": "/images/team/person2@2x.webp",
+      "alt": "Jane Doe",
+      "name": "Jane Doe",
+      "text": "Vice President"
+    },
+    {
+      "src": "/images/team/person3.jpg",
+      "src2x": "/images/team/person3@2x.jpg",
+      "webp": "/images/team/person3.webp",
+      "webp2x": "/images/team/person3@2x.webp",
+      "alt": "Steve Smith",
+      "name": "Steve Smith",
+      "text": "Marketing Head"
+    }
+  ],
+  "imagesCases": [
+    {
+      "src": "/images/cases/cases1.jpg",
+      "src2x": " /images/cases/cases1@2x.jpg",
+      "webp": "/images/cases/cases1.webp",
+      "webp2x": "/images/cases/cases1@2x.webp",
+      "alt": "people at the table"
+    },
+    {
+      "src": "/images/cases/cases2.jpg",
+      "src2x": "/images/cases/cases2@2x.jpg",
+      "webp": "/images/cases/cases2.webp",
+      "webp2x": "/images/cases/cases2@2x.webp",
+      "alt": "laptop"
+    },
+    {
+      "src": "/images/cases/cases3.jpg",
+      "src2x": "/images/cases/cases3@2x.jpg",
+      "webp": "/images/cases/cases3.webp",
+      "webp2x": "/images/cases/cases3@2x.webp",
+      "alt": "diagrams"
+    },
+    {
+      "src": "/images/cases/cases4.jpg",
+      "src2x": "/images/cases/cases4@2x.jpg",
+      "webp": "/images/cases/cases4.webp",
+      "webp2x": "/images/cases/cases4@2x.webp",
+      "alt": "skyscrapers"
+    },
+    {
+      "src": "/images/cases/cases5.jpg",
+      "src2x": "/images/cases/cases5@2x.jpg",
+      "webp": "/images/cases/cases5.webp",
+      "webp2x": "/images/cases/cases5@2x.webp",
+      "alt": "handshake"
+    },
+    {
+      "src": "/images/cases/cases6.jpg",
+      "src2x": "/images/cases/cases6@2x.jpg",
+      "webp": "/images/cases/cases6.webp",
+      "webp2x": "/images/cases/cases6@2x.webp",
+      "alt": "team of workers"
+    },
+    {
+      "src": "/images/cases/cases7.jpg",
+      "src2x": "/images/cases/cases7@2x.jpg",
+      "webp": "/images/cases/cases7.webp",
+      "webp2x": "/images/cases/cases7@2x.webp",
+      "alt": "friendly team"
+    },
+    {
+      "src": "/images/cases/cases8.jpg",
+      "src2x": "/images/cases/cases8@2x.jpg",
+      "webp": "/images/cases/cases8.webp",
+      "webp2x": "/images/cases/cases8@2x.webp",
+      "alt": "smiling girl"
+    }
+  ]
+}
