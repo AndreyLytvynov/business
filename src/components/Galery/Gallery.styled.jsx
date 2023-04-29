@@ -50,6 +50,50 @@ export const ImageBoxStyled = styled.div`
   }
 `;
 
+export const NameStyled = styled.h3`
+  font-size: 20px;
+  line-height: 1.35;
+  @media screen and ${(props) => props.theme.media.tablet} {
+    font-size: 32px;
+    line-height: 1;
+  }
+`;
+export const TextStyled = styled.p`
+  margin-top: 8px;
+
+  font-size: 16px;
+  line-height: 1.37;
+  @media screen and ${(props) => props.theme.media.tablet} {
+    font-size: 18px;
+    line-height: 1.38;
+  }
+`;
+export const CloseBtnStyled = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+
+  height: 50px;
+  width: 20px;
+
+  background: none;
+  border: none;
+  border-radius: 50%;
+
+  opacity: 0.5;
+  transform: translateX(-50%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  :hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+`;
+
 export const PrevButtonStyled = styled.button`
   display: flex;
   justify-content: space-between;
@@ -63,6 +107,9 @@ export const PrevButtonStyled = styled.button`
   border: none;
   cursor: pointer;
   z-index: 1;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 
   @media screen and ${(props) => props.theme.media.tablet} {
     width: 380px;
@@ -105,6 +152,9 @@ export const NextButtonStyled = styled.button`
   cursor: pointer;
   z-index: 1;
 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+
   @media screen and ${(props) => props.theme.media.tablet} {
     width: 380px;
     right: -80px;
@@ -124,49 +174,5 @@ export const NextButtonStyled = styled.button`
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
-  }
-`;
-
-export const NameStyled = styled.h3`
-  font-size: 20px;
-  line-height: 1.35;
-  @media screen and ${(props) => props.theme.media.tablet} {
-    font-size: 32px;
-    line-height: 1;
-  }
-`;
-export const TextStyled = styled.p`
-  margin-top: 8px;
-
-  font-size: 16px;
-  line-height: 1.37;
-  @media screen and ${(props) => props.theme.media.tablet} {
-    font-size: 18px;
-    line-height: 1.38;
-  }
-`;
-export const CloseBtnStyled = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-
-  height: 50px;
-  width: 20px;
-
-  background: none;
-  border: none;
-  border-radius: 50%;
-
-  opacity: 0.5;
-  transform: translateX(-50%);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  :hover {
-    cursor: pointer;
-    opacity: 1;
   }
 `;
