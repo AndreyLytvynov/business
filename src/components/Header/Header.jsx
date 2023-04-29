@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+
+import Logo from "../Logo/Logo";
+import { Box } from "../../theme/Box";
 
 import {
   HeaderStyled,
@@ -6,8 +9,6 @@ import {
   NavItemStyled,
   LinkStyled,
 } from "./Header.styled";
-import Logo from "../Logo/Logo";
-import { Box } from "../../theme/Box";
 
 const Header = () => {
   const [currentScroll, setCurrentScroll] = useState(0);

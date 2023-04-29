@@ -1,4 +1,3 @@
-import React from "react";
 import { LogoStyled } from "./Logo.styled";
 
 const Logo = () => {

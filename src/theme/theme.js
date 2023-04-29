@@ -14,21 +14,6 @@ export const theme = {
     blue: "#0284D0",
   },
 
-  sizes: {
-    small: "10px",
-    medium: "16px",
-    large: "24px",
-  },
-
-  padding: {
-    xs: "5px",
-    s: "7px",
-    m: "8px",
-    xml: "10px",
-    xm: "11px",
-    l: "12px",
-    xl: "15px",
-  },
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
 
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],

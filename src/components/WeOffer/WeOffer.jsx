@@ -1,4 +1,5 @@
-import React from "react";
+import Button from "../Button/Button";
+
 import {
   WeOfferStyled,
   WrapperStyled,
@@ -6,11 +7,6 @@ import {
   SectionTitleStyled,
   TextStyled,
 } from "./WeOffer.styled";
-import Button from "../Button/Button";
-import people from "../../images/home/people.jpg";
-import people2x from "../../images/home/people@2x.jpg";
-import peopleWebp from "../../images/home/people.webp";
-import peopleWebp2x from "../../images/home/people@2x.webp";
 
 const WeOffer = () => {
   return (
@@ -18,11 +14,14 @@ const WeOffer = () => {
       <ImageWrapperStyled>
         <picture>
           <source
-            srcSet={`${peopleWebp} 1x, ${peopleWebp2x} 2x`}
+            srcSet="/images/home/people.webp 1x, /images/home/people@2x.webp 2x"
             type="image/webp"
           />
-          <source srcSet={`${people} 1x, ${people2x} 2x`} type="image/jpeg" />
-          <img src={people} alt="people" width="400" />
+          <source
+            srcSet="/images/home/people.jpg 1x, people2x 2x"
+            type="image/jpeg"
+          />
+          <img src="/images/home/people.jpg" alt="people" width="400" />
         </picture>
       </ImageWrapperStyled>
       <WrapperStyled>

@@ -1,7 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import {
+  customArrowPrev,
+  customArrowNext,
+} from "../../helpers/customGalleryBtn";
+
+import Modal from "../Modal/Modal";
+import SocialLinks from "../SocialLinks/SocialLinks";
+import { Box } from "../../theme/Box";
 
 import {
   GalleryWrapperStyled,
@@ -11,16 +20,6 @@ import {
   TextStyled,
   CloseBtnStyled,
 } from "./Gallery.styled";
-
-import {
-  customArrowPrev,
-  customArrowNext,
-} from "../../helpers/customGalleryBtn";
-
-import closeImage from "../../images/gallery/close.png";
-import Modal from "../Modal/Modal";
-import SocialLinks from "../SocialLinks/SocialLinks";
-import { Box } from "../../theme/Box";
 
 const Gallery = ({ images, slider }) => {
   const [showGallery, setShowGallery] = useState(false);
@@ -94,7 +93,11 @@ const Gallery = ({ images, slider }) => {
             ))}
           </Carousel>
           <CloseBtnStyled onClick={toggleGallery}>
-            <img src={closeImage} alt="close modal" width={40} />
+            <img
+              src={"images/gallery/close.png"}
+              alt="close modal"
+              width={40}
+            />
           </CloseBtnStyled>
         </Modal>
       )}

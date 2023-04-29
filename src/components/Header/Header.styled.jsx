@@ -2,21 +2,24 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
   position: fixed;
+
   padding: 22px 24px;
+
   background-color: rgba(0, 0, 0, 0.6);
   opacity: ${(props) => props.opacity};
 
   @media screen and ${(props) => props.theme.media.tablet} {
     display: flex;
-    padding: 23px 32px;
     align-items: center;
     justify-content: space-between;
+
     min-width: 768px;
+    padding: 23px 32px;
   }
 
   @media screen and ${(props) => props.theme.media.desktop} {
-    padding: 32px 28px;
     min-width: 1360px;
+    padding: 32px 28px;
   }
 
   z-index: 1;
@@ -38,6 +41,7 @@ export const NavItemStyled = styled.li`
 
   &:not(:last-child) {
     margin-right: 12px;
+
     @media screen and ${(props) => props.theme.media.tablet} {
       margin-right: 20px;
     }
@@ -48,8 +52,8 @@ export const NavItemStyled = styled.li`
 `;
 
 export const LinkStyled = styled.a`
-  padding: 10px 0;
   position: relative;
+  padding: 10px 0;
   ::after {
     content: "";
     position: absolute;

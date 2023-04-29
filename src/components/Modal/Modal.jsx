@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { StyledModal, StyledOverlay } from "./Modal.styled";
 
 const Modal = ({ openModal, children }) => {

@@ -1,6 +1,6 @@
-import React from "react";
 import { Box } from "../../theme/Box";
 import SocialLinks from "../SocialLinks/SocialLinks";
+
 import { CopyrightStyled } from "./Footer.styled";
 
 const Footer = () => {

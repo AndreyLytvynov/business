@@ -13,9 +13,11 @@ export const ContactsStyled = styled.section`
 
 export const WrapperStyled = styled.div`
   padding: 51px 20px 25px;
+
   background: #f4f4f4;
   color: #333333;
   text-align: start;
+
   @media screen and ${(props) => props.theme.media.tablet} {
     width: 400px;
     padding: 32px 32px 0 32px;
@@ -28,6 +30,7 @@ export const WrapperStyled = styled.div`
 
 export const ImageWrapperStyled = styled.div`
   height: 220px;
+
   @media screen and ${(props) => props.theme.media.tablet} {
     width: 368px;
     height: 354px;
@@ -44,6 +47,7 @@ export const ImageWrapperStyled = styled.div`
 `;
 export const SectionTitleStyled = styled.h2`
   margin-bottom: 24px;
+
   font-size: 32px;
   line-height: 1.38;
   font-weight: 400;
@@ -54,9 +58,10 @@ export const SectionTitleStyled = styled.h2`
 `;
 
 export const TextStyled = styled.p`
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.37;
-  margin-bottom: 16px;
 
   @media screen and ${(props) => props.theme.media.tablet} {
     font-size: 18px;
@@ -67,13 +72,14 @@ export const TextStyled = styled.p`
 export const FormStyled = styled.form``;
 
 export const InputStyled = styled.input`
+  width: 100%;
+  padding: 16px 8px;
+
+  background: ${(props) => props.theme.colors.backgroundWhite};
   font-size: 18px;
   line-height: 1.38;
-  width: 100%;
-  background: ${(props) => props.theme.colors.backgroundWhite};
   border-radius: 5px;
   border: none;
-  padding: 16px 8px;
   ::placeholder {
     color: #808080;
     font-size: 16px;

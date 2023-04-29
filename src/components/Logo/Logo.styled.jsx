@@ -4,6 +4,7 @@ export const LogoStyled = styled.div`
   svg {
     width: 246px;
     height: 38px;
+
     @media screen and ${(props) => props.theme.media.tablet} {
       width: 297px;
       height: 48px;

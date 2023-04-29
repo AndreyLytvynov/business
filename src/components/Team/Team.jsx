@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { TeamStyled, TextStyled, SectionTitleStyled } from "./Team.styled";
+import { useEffect, useState } from "react";
+
 import Gallery from "../Galery/Gallery";
+import { TeamStyled, TextStyled, SectionTitleStyled } from "./Team.styled";
 
 const Team = () => {
   const [data, setData] = useState([]);

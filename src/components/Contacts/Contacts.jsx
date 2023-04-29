@@ -1,13 +1,9 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "../../helpers/validationForm";
+
 import Button from "../Button/Button";
 import { Box } from "../../theme/Box";
-import contact from "../../images/home/contact.jpg";
-import contact2x from "../../images/home/contact@2x.jpg";
-import contactWebp from "../../images/home/contact.webp";
-import contactWebp2x from "../../images/home/contact@2x.webp";
 
 import {
   ContactsStyled,
@@ -37,11 +33,18 @@ const Contacts = () => {
       <ImageWrapperStyled>
         <picture>
           <source
-            srcSet={`${contactWebp} 1x, ${contactWebp2x} 2x`}
+            srcSet="/images/home/contact.webp 1x, /images/home/contact@2x.webp 2x"
             type="image/webp"
           />
-          <source srcSet={`${contact} 1x, ${contact2x} 2x`} type="image/jpeg" />
-          <img src={contact} alt="man drink coffee" width="400" />
+          <source
+            srcSet="/images/home/contact.jpg 1x, /images/home/contact@2x.jpg 2x"
+            type="image/jpeg"
+          />
+          <img
+            src="/images/home/contact.jpg"
+            alt="man drink coffee"
+            width="400"
+          />
         </picture>
       </ImageWrapperStyled>
       <WrapperStyled>

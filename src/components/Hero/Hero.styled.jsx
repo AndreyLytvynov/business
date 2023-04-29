@@ -1,22 +1,19 @@
 import styled from "styled-components";
-import bgImage from "../../images/home/showcase.jpg";
-import bgImage2x from "../../images/home/showcase@2x.jpg";
-import bgImageWebp from "../../images/home/showcase.webp";
-import bgImageWebp2x from "../../images/home/showcase@2x.webp";
 
 export const HeroStyled = styled.section`
   height: 533px;
   padding: 160px 40px;
+
   background-size: cover;
   background-position: center center;
 
-  @supports (background-image: url(${bgImageWebp})) {
+  @supports (background-image: url("/images/home/showcase.webp")) {
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url(${bgImageWebp});
+      url("/images/home/showcase.webp");
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -26,7 +23,7 @@ export const HeroStyled = styled.section`
           rgba(0, 0, 0, 0.5),
           rgba(0, 0, 0, 0.5)
         ),
-        url(${bgImageWebp2x});
+        url("/images/home/showcase@2x.webp");
     }
   }
 
@@ -35,7 +32,7 @@ export const HeroStyled = styled.section`
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(.jpg), url(${bgImage});
+    url(.jpg), url("/images/home/showcase.jpg");
   background-size: cover;
   background-position: center center;
 
@@ -47,7 +44,7 @@ export const HeroStyled = styled.section`
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(${bgImage2x});
+      url("/images/home/showcase@2x.jpg");
   }
 
   @media screen and ${(props) => props.theme.media.tablet} {
@@ -62,11 +59,12 @@ export const HeroStyled = styled.section`
 `;
 
 export const MainTitleStyled = styled.h1`
+  text-align: center;
+  margin-bottom: 16px;
+
   color: ${(props) => props.theme.colors.textWhite};
   font-size: 40px;
   line-height: 1.35;
-  text-align: center;
-  margin-bottom: 16px;
 
   @media screen and ${(props) => props.theme.media.tablet} {
     font-size: 55px;
@@ -75,8 +73,9 @@ export const MainTitleStyled = styled.h1`
 `;
 
 export const TextHeroStyled = styled.p`
-  color: ${(props) => props.theme.colors.textWhite};
   text-align: center;
+
+  color: ${(props) => props.theme.colors.textWhite};
   font-size: 26px;
   line-height: 1.23;
   @media screen and ${(props) => props.theme.media.tablet} {

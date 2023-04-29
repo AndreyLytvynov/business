@@ -1,4 +1,5 @@
-import React from "react";
+import Button from "../Button/Button";
+
 import {
   BlogStyled,
   WrapperStyled,
@@ -6,11 +7,6 @@ import {
   SectionTitleStyled,
   TextStyled,
 } from "./Blog.styled";
-import Button from "../Button/Button";
-import blog from "../../images/home/blog.jpg";
-import blog2x from "../../images/home/blog@2x.jpg";
-import blogWebp from "../../images/home/blog.webp";
-import blogWebp2x from "../../images/home/blog@2x.webp";
 
 const Blog = () => {
   return (
@@ -29,11 +25,14 @@ const Blog = () => {
       <ImageWrapperStyled>
         <picture>
           <source
-            srcSet={`${blogWebp} 1x, ${blogWebp2x} 2x`}
+            srcSet="/images/home/blog.webp 1x, images/home/blog@2x.webp 2x"
             type="image/webp"
           />
-          <source srcSet={`${blog} 1x, ${blog2x} 2x`} type="image/jpeg" />
-          <img src={blog} alt="working table" width="400" />
+          <source
+            srcSet="/images/home/blog.jpg 1x, /images/home/blog@2x.jpg 2x"
+            type="image/jpeg"
+          />
+          <img src="/images/home/blog.jpg" alt="working table" width="400" />
         </picture>
       </ImageWrapperStyled>
     </BlogStyled>

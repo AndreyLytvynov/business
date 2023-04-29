@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { CasesStyled, TextStyled, SectionTitleStyled } from "./Cases.styled";
+import { useEffect, useState } from "react";
+
 import Gallery from "../Galery/Gallery";
+
+import { CasesStyled, TextStyled, SectionTitleStyled } from "./Cases.styled";
 
 const Cases = () => {
   const [data, setData] = useState([]);

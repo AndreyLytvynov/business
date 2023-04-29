@@ -8,6 +8,7 @@ export const LinksWrapper = styled.div`
 export const SocialIcon = styled.a`
   display: flex;
   align-items: center;
+
   width: 25px;
 
   :hover {

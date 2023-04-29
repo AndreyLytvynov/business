@@ -7,10 +7,11 @@ export const WeOfferStyled = styled.section`
 `;
 
 export const WrapperStyled = styled.div`
+  text-align: start;
   padding: 79px 20px;
+
   background: ${(props) => props.theme.colors.accent};
   color: ${(props) => props.theme.colors.textWhite};
-  text-align: start;
   @media screen and ${(props) => props.theme.media.tablet} {
     width: 50%;
     padding: 62px 32px;
@@ -23,6 +24,7 @@ export const WrapperStyled = styled.div`
 
 export const ImageWrapperStyled = styled.div`
   height: 220px;
+
   @media screen and ${(props) => props.theme.media.tablet} {
     width: 50%;
     height: 589px;
@@ -33,11 +35,13 @@ export const ImageWrapperStyled = styled.div`
   img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
   }
 `;
 export const SectionTitleStyled = styled.h2`
   margin-bottom: 24px;
+
   font-size: 32px;
   line-height: 1.38;
   @media screen and ${(props) => props.theme.media.tablet} {
@@ -47,9 +51,10 @@ export const SectionTitleStyled = styled.h2`
 `;
 
 export const TextStyled = styled.p`
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.37;
-  margin-bottom: 16px;
 
   @media screen and ${(props) => props.theme.media.tablet} {
     font-size: 18px;

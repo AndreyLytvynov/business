@@ -1,8 +1,7 @@
-import React from "react";
-import { HeroStyled, MainTitleStyled, TextHeroStyled } from "./Hero.styled";
 import Button from "../Button/Button";
-import arrow from "../../images/arrow-btn.svg";
 import { Box } from "../../theme/Box";
+
+import { HeroStyled, MainTitleStyled, TextHeroStyled } from "./Hero.styled";
 
 const Hero = () => {
   return (
@@ -13,7 +12,7 @@ const Hero = () => {
       </TextHeroStyled>
       <Button variant={"hero"}>
         <Box mr={"8px"}>
-          <img src={arrow} alt="arrow button" />
+          <img src={"/images/arrow-btn.svg"} alt="arrow button" />
         </Box>
         <span>Read More</span>
       </Button>
