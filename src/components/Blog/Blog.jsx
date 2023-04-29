@@ -33,7 +33,7 @@ const Blog = () => {
             type="image/webp"
           />
           <source srcSet={`${blog} 1x, ${blog2x} 2x`} type="image/jpeg" />
-          <img src={blog} alt="people" width="400" />
+          <img src={blog} alt="working table" width="400" />
         </picture>
       </ImageWrapperStyled>
     </BlogStyled>

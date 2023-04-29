@@ -45,14 +45,14 @@ const Contacts = () => {
             type="image/webp"
           />
           <source srcSet={`${contact} 1x, ${contact2x} 2x`} type="image/jpeg" />
-          <img src={contact} alt="people" width="400" />
+          <img src={contact} alt="man drink coffee" width="400" />
         </picture>
       </ImageWrapperStyled>
       <WrapperStyled>
         <FormStyled name="contact" method="POST" data-netlify="true">
           <SectionTitleStyled>Request Callback</SectionTitleStyled>
           <input type="hidden" name="form-name" value="contact" />
-          <Box as={"label"} position={"relative"}>
+          <Box as={"label"} position={"relative"} aria-label="name">
             <InputStyled
               name="name"
               type="text"
@@ -65,8 +65,7 @@ const Contacts = () => {
               {errors?.text?.message}
             </ErrorMessage>
           </Box>
-
-          <Box as={"label"} position={"relative"}>
+          <Box as={"label"} position={"relative"} aria-label="email">
             <InputStyled
               type="email"
               name="email"
@@ -79,7 +78,6 @@ const Contacts = () => {
               {errors?.email?.message}
             </ErrorMessage>
           </Box>
-
           <Button variant={"contact"} type="submit" disabled={!isValid}>
             Send
           </Button>
