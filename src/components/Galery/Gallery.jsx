@@ -24,9 +24,11 @@ import { Box } from "../../theme/Box";
 
 const Gallery = ({ images, slider }) => {
   const [showGallery, setShowGallery] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const toggleGallery = () => {
+  const toggleGallery = (i) => {
     setShowGallery(!showGallery);
+    setSelectedIndex(i);
   };
 
   return (
@@ -35,9 +37,14 @@ const Gallery = ({ images, slider }) => {
         {images &&
           images
             .slice(0, 6)
-            .map(({ src, src2x, webp, webp2x, alt, name, text }) => (
+            .map(({ src, src2x, webp, webp2x, alt, name, text }, i) => (
               <Box key={src}>
-                <ImageBoxStyled onClick={toggleGallery} slider={slider}>
+                <ImageBoxStyled
+                  onClick={() => {
+                    toggleGallery(i);
+                  }}
+                  slider={slider}
+                >
                   <picture>
                     <source
                       srcSet={`${webp} 1x, ${webp2x} 2x`}
@@ -71,6 +78,7 @@ const Gallery = ({ images, slider }) => {
             infiniteLoop
             renderArrowPrev={customArrowPrev}
             renderArrowNext={customArrowNext}
+            selectedItem={selectedIndex}
           >
             {images.map(({ src, src2x, webp, webp2x, alt }) => (
               <div key={src}>
