@@ -28,14 +28,6 @@ export const BackdropImage = styled.div`
 
 export const ImageBoxStyled = styled.div`
   position: relative;
-  /* height: 176px; */
-
-  @media screen and ${(props) => props.theme.media.tablet} {
-    /* height: 148px; */
-  }
-  @media screen and ${(props) => props.theme.media.desktop} {
-    /* height: 282px; */
-  }
 
   img {
     width: 100%;

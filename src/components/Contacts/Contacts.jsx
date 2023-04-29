@@ -33,7 +33,6 @@ const Contacts = () => {
 
   const onFocusChange = async (event) => {
     await trigger(event.target.name);
-    console.log(isValid);
   };
 
   return (

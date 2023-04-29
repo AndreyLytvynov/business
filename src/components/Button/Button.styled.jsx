@@ -46,7 +46,7 @@ const WeOfferButtonStyles = css`
 const ContactButtonStyles = css`
   background-color: ${(props) => props.theme.colors.accent};
   border: none;
-  margin-top: 40px;
+  margin-top: 10px;
   :hover {
     background-color: ${(props) => props.theme.colors.secondaryAccent};
   }

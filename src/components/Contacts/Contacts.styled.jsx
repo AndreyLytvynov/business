@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const ContactsStyled = styled.section`
   @media screen and ${(props) => props.theme.media.tablet} {
     display: flex;
+    margin-bottom: 40px;
+  }
+  @media screen and ${(props) => props.theme.media.desktop} {
+    display: flex;
+    margin-bottom: 0;
   }
 `;
 
@@ -12,11 +17,11 @@ export const WrapperStyled = styled.div`
   color: #333333;
   text-align: start;
   @media screen and ${(props) => props.theme.media.tablet} {
-    width: 50%;
-    padding: 30px;
+    width: 400px;
+    padding: 32px 32px 0 32px;
   }
   @media screen and ${(props) => props.theme.media.desktop} {
-    width: 50%;
+    width: 690px;
     padding: 56px 20px 77px;
   }
 `;
@@ -24,11 +29,12 @@ export const WrapperStyled = styled.div`
 export const ImageWrapperStyled = styled.div`
   height: 220px;
   @media screen and ${(props) => props.theme.media.tablet} {
-    width: 50%;
+    width: 368px;
     height: 354px;
   }
   @media screen and ${(props) => props.theme.media.desktop} {
     height: 454px;
+    width: 670px;
   }
   img {
     width: 100%;
@@ -37,7 +43,7 @@ export const ImageWrapperStyled = styled.div`
   }
 `;
 export const SectionTitleStyled = styled.h2`
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 32px;
   line-height: 1.38;
   font-weight: 400;
