@@ -44,6 +44,7 @@ const Contacts = () => {
             src="/images/home/contact.jpg"
             alt="man drink coffee"
             width="400"
+            loading="lazy"
           />
         </picture>
       </ImageWrapperStyled>

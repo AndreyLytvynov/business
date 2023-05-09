@@ -9,7 +9,12 @@ import {
 const SocialLinks = ({ isFooter }) => {
   return (
     <LinksWrapper>
-      <FaceBookStyled href="/" isFooter={isFooter}>
+      <FaceBookStyled
+        href="/"
+        target="_blank"
+        isFooter={isFooter}
+        aria-label="Go to FaceBook website"
+      >
         <svg
           width="35"
           height="35"
@@ -24,7 +29,12 @@ const SocialLinks = ({ isFooter }) => {
         </svg>
       </FaceBookStyled>
 
-      <TwitterStyled href="/" isFooter={isFooter}>
+      <TwitterStyled
+        href="/"
+        target="_blank"
+        isFooter={isFooter}
+        aria-label="Go to Twitter website"
+      >
         <svg
           width="35"
           height="35"
@@ -39,7 +49,12 @@ const SocialLinks = ({ isFooter }) => {
         </svg>
       </TwitterStyled>
 
-      <YouTubeStyled href="/" isFooter={isFooter}>
+      <YouTubeStyled
+        href="/"
+        target="_blank"
+        isFooter={isFooter}
+        aria-label="Go to YouTube website"
+      >
         <svg
           width="40"
           height="35"
@@ -54,7 +69,12 @@ const SocialLinks = ({ isFooter }) => {
         </svg>
       </YouTubeStyled>
 
-      <LinkedinStyled href="/" isFooter={isFooter}>
+      <LinkedinStyled
+        href="/"
+        target="_blank"
+        isFooter={isFooter}
+        aria-label="Go to Linkedin website"
+      >
         <svg
           width="31"
           height="35"

@@ -21,7 +21,12 @@ const WeOffer = () => {
             srcSet="/images/home/people.jpg 1x, people2x 2x"
             type="image/jpeg"
           />
-          <img src="/images/home/people.jpg" alt="people" width="400" />
+          <img
+            src="/images/home/people.jpg"
+            alt="people"
+            width="400"
+            loading="lazy"
+          />
         </picture>
       </ImageWrapperStyled>
       <WrapperStyled>

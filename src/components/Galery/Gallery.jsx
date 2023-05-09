@@ -53,7 +53,7 @@ const Gallery = ({ images, slider }) => {
                       srcSet={`${src} 1x, ${src2x} 2x`}
                       type="image/jpeg"
                     />
-                    <img src={src} alt={alt} />
+                    <img src={src} alt={alt} width="640" loading="lazy" />
                   </picture>
                   <BackdropImage>{!slider && <SocialLinks />}</BackdropImage>
                 </ImageBoxStyled>
@@ -87,7 +87,7 @@ const Gallery = ({ images, slider }) => {
                     type="image/webp"
                   />
                   <source srcSet={`${src} 1x, ${src2x} 2x`} type="image/jpeg" />
-                  <img src={src} alt={alt} width={400} />
+                  <img src={src} alt={alt} width={640} loading="lazy" />
                 </picture>
               </div>
             ))}
